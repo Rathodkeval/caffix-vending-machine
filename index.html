@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>CAFFIX - Reserve Espresso Bar</title>
+  <meta name="description" content="CAFFIX Luxury Self-Service Coffee Vending Kiosk">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+  <!-- Background effects -->
+  <div class="bg-decor"></div>
+  <div class="bg-smoke"></div>
+
+  <div class="kiosk-container">
+    <!-- Header -->
+    <header class="kiosk-header">
+      <div class="brand-section">
+        <svg class="brand-logo-svg" viewBox="0 0 24 24">
+          <path d="M2 21h18v-2H2v2zM20 8h-2V5h2V2h-2v3H4v8c0 3.31 2.69 6 6 6h4c3.31 0 6-2.69 6-6v-3h2c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zm-2 5c0 2.21-1.79 4-4 4h-4c-2.21 0-4-1.79-4-4V7h12v6zm2-3h-2V9h2v1z"/>
+        </svg>
+        <span class="brand-name">Caffix</span>
+      </div>
+      <div class="system-status">
+        <span class="status-dot"></span>
+        <span>Online</span>
+      </div>
+    </header>
+
+    <!-- Main Splash Hero -->
+    <main class="kiosk-main">
+      <div class="hero-wrapper">
+        <div class="hero-visual"></div>
+        
+        <h1 class="hero-title">Freshly Brewed Happiness</h1>
+        <p class="hero-subtitle">Reserve Espresso Bar</p>
+
+        <!-- Big touch button -->
+        <button id="start-btn" class="btn-primary-large" onclick="navigateToSelection()">
+          <span>Select Coffee Flavours</span>
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+          </svg>
+        </button>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

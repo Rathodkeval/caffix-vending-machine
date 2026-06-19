@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>CAFFIX - Customization</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-decor"></div>
+
+  <div class="kiosk-container">
+    <header class="kiosk-header">
+      <div class="brand-section">
+        <svg class="brand-logo-svg" viewBox="0 0 24 24">
+          <path d="M2 21h18v-2H2v2zM20 8h-2V5h2V2h-2v3H4v8c0 3.31 2.69 6 6 6h4c3.31 0 6-2.69 6-6v-3h2c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zm-2 5c0 2.21-1.79 4-4 4h-4c-2.21 0-4-1.79-4-4V7h12v6zm2-3h-2V9h2v1z"/>
+        </svg>
+        <span class="brand-name">Caffix</span>
+      </div>
+      
+      <button class="btn-nav-back" onclick="navigateToSelection()">
+        <svg viewBox="0 0 24 24">
+          <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+        </svg>
+        <span>Back</span>
+      </button>
+    </header>
+
+    <main class="kiosk-main">
+      <div class="details-container">
+        <!-- Left Pane: Graphic & Badges -->
+        <div class="details-visual-pane">
+          <div id="coffee-image" class="details-hero-img"></div>
+          
+          <div id="tags-container" class="details-tags-grid">
+            <!-- Dynamic specifications -->
+          </div>
+        </div>
+
+        <!-- Right Pane: Customizations -->
+        <div class="details-content-pane">
+          <div class="details-title-desc">
+            <h1 id="coffee-name" class="details-name">Premium Blend</h1>
+            <p id="coffee-desc" class="details-description">Loading selection specs...</p>
+          </div>
+
+          <div class="customization-section">
+            <!-- Cup Size Toggles -->
+            <div class="custom-option">
+              <span class="custom-label">Select Cup Size</span>
+              <div id="size-toggles" class="custom-buttons" style="grid-template-columns: repeat(2, 1fr);">
+                <button class="btn-toggle active" data-value="Regular">
+                  <span>Regular</span>
+                  <span class="sub-lbl">240 ml</span>
+                </button>
+                <button class="btn-toggle" data-value="Large">
+                  <span>Large</span>
+                  <span class="sub-lbl">360 ml (+₹10)</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Sugar Level -->
+            <div class="custom-option">
+              <span class="custom-label">Sugar Level</span>
+              <div id="sugar-toggles" class="custom-buttons-four">
+                <button class="btn-toggle">None</button>
+                <button class="btn-toggle">Low</button>
+                <button class="btn-toggle active">Medium</button>
+                <button class="btn-toggle">High</button>
+              </div>
+            </div>
+
+            <!-- Strength -->
+            <div class="custom-option">
+              <span class="custom-label">Coffee Strength</span>
+              <div id="strength-toggles" class="custom-buttons">
+                <button class="btn-toggle">Mild</button>
+                <button class="btn-toggle active">Medium</button>
+                <button class="btn-toggle">Strong</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Total & Buy Now -->
+          <div class="details-footer">
+            <div class="details-price-block">
+              <span class="price-lbl">Total Price</span>
+              <span id="coffee-price" class="price-val">₹25</span>
+            </div>
+            
+            <button id="buy-now-btn" class="btn-buy-now">
+              <span>Checkout</span>
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
